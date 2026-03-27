@@ -1,42 +1,53 @@
 # Dental-Caries-Detection-CNN
 
-An automated system for detecting tooth decay (caries) from intraoral images using Convolutional Neural Networks (CNN). This project aims to assist dental professionals in early diagnosis and screening of dental health issues.
+An automated system for detecting tooth decay (caries) from intraoral images using Convolutional Neural Networks (CNN) and TensorFlow.
 
-## ┬┐ Project Overview
-Early detection of dental caries is crucial for maintaining oral health and preventing further complications. This project leverages deep learning techniques to classify dental images into various stages of tooth decay.
+## Features
+- **Deep Learning Model**: CNN architecture optimized for dental image classification (Healthy vs. Caries).
+- **Automated Pipeline**: Includes preprocessing and training workflows.
+- **Dataset Support**: Structured for training on intraoral image datasets.
 
-## ┬┐ Features
-- **Deep Learning Model**: CNN architecture optimized for dental image classification.
-- **Automated Pipeline**: Includes data preprocessing, training, and evaluation scripts.
-- **Dataset Support**: Structured for training on varied intraoral image datasets.
+## Tech Stack
+- **Language**: Python 3.8+
+- **Framework**: TensorFlow, Keras
+- **Libraries**: OpenCV, Pandas, Matplotlib
 
-## ┬┐ Project Structure
-- `notebooks/`:
-    - `Tooth_Decay_CNN_Training.ipynb`: Main notebook for model architecture and training.
-    - `hackdata.ipynb`: Data experimentation and processing script.
-- `data/`:
-    - `teeth_dataset/`: Contains partitioned train/test images and CSV metadata.
-    - `test.jpg`: Sample image for inference testing.
+## Project Structure
+```
+├── README.md
+├── LICENSE
+├── src/                # (Placeholder for future scripts)
+├── notebooks/          # Training and EDA notebooks
+│   ├── Tooth_Decay_CNN_Training.ipynb
+│   └── hackdata.ipynb
+├── data/               # teeth_dataset storage
+├── models/             # Saved model weights
+└── results/            # Performance metrics
+```
 
-## ┬┐ Getting Started
+## Getting Started
 
 ### Prerequisites
 - Python 3.8+
-- TensorFlow / Keras
-- OpenCV
-- Pandas, NumPy, Matplotlib
+- TensorFlow, Keras, OpenCV
+
+### Installation
+```bash
+git clone https://github.com/DinhLucent/Tooth-decay-project.git
+cd Tooth-decay-project
+# (Add requirements.txt if needed)
+```
 
 ### Usage
-1. Clone the repository.
-2. Navigate to `notebooks/`.
-3. Open `Tooth_Decay_CNN_Training.ipynb` in Jupyter or Google Colab to train the model.
+Open `notebooks/Tooth_Decay_CNN_Training.ipynb` in Jupyter or Google Colab to train the model and view results.
 
-## ┬┐ Dataset
+## Dataset
 The dataset includes labeled images of teeth categorized into:
 - **Healthy**
 - **Caries (Decay)**
 
-Refer to `data/teeth_dataset/` for the training and testing sets.
+## License
+MIT License — see [LICENSE](LICENSE)
 
 ---
-*Created by DinhLucent - 2022 (Updated 2026)*
+Built by [DinhLucent](https://github.com/DinhLucent)
